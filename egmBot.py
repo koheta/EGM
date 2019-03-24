@@ -2619,4 +2619,4 @@ PERK:
         r = random.uniform(0, 30)
         await client.send_message(message.channel, f'{message.author.mention}さんのおちんぽは' + str(r) + 'cmです')
 
-client.run(str(os.environ.get('BOT_TOKEN)))
+client.run(str(os.environ.get('BOT_TOKEN')))
