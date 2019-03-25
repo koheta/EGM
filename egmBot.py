@@ -2531,6 +2531,7 @@ async def on_message(message):
             miTenko = ([member.display_name for member in client.get_all_members()])
             name = client.user.name
             miTenko.remove(name)
+            miTenko.remove('EGM_resultBot')
             await client.send_message(message.channel, '@everyone 点呼を開始しました。メンバーが揃っているチームの代表は、このテキストチャットに　!揃いました　をコピペして送信してください')
 
     if message.content.startswith('!揃いました'):
@@ -2542,6 +2543,7 @@ async def on_message(message):
             for i in miTenko:
                 user = discord.utils.get(message.server.members, name = i)
                 await client.send_message(message.channel, user.mention +'さん！点呼が未完了です')
+       
 
     if message.content.startswith('!eスポーツルール'):
         reply = '''
