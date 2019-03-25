@@ -2581,11 +2581,11 @@ Outrider: スパロー, ホーク
         await client.send_message(message.channel, reply)
     if message.content.startswith('!GA'):
         reply = '''
-        GA制限リスト
+        GA制限リスト 更新日: 2019/3/25
         
 GAを無理強するのは違反行為です。お気をつけください。
         
-武器: DMR, SWORDFISH, OUTLOW, SDM, HELLION, C-knife
+武器: RAMPART, DMR, SWORDFISH, OUTLOW, SDM, HELLION, C-knife
 アタッチメント: ストック2
 PERK:
 ワイルドカード: オーバーキル, アンダーキル
