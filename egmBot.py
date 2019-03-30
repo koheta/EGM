@@ -467,8 +467,9 @@ async def on_message(message):
             for i in Single_size256:
                 channel_name = i
                 await client.create_channel(message.server, channel_name, type=discord.ChannelType.text)
-            await client.send_message(message.channel,  'シングルイリミネーション チームサイズ128のチャンネルを作成しました')
+            await client.send_message(message.channel,  'シングルイリミネーション チームサイズ256のチャンネルを作成しました')
     #ダブル サイズ8
+    '''
         if message.content.startswith('Double size 8'):
             for i in Double_size8:
                 channel_name = i
@@ -504,7 +505,7 @@ async def on_message(message):
                 channel_name = i
                 await client.create_channel(message.server, channel_name, type=discord.ChannelType.text)
             await client.send_message(message.channel,  'ダブルイリミネーション チームサイズ256のチャンネルを作成しました')
-
+'''
     if message.content.startswith('!勝ちました') or message.content.startswith('!win') or message.content.startswith('!勝ち') or message.content.startswith('！勝ちました') or message.content.startswith('!WIN'):
         ch = [channel.id for channel in client.get_all_channels()]
         l = []
@@ -1505,7 +1506,7 @@ async def on_message(message):
             await client.send_message(message.channel, 'Congratulations!!! 優勝おめでとうございます!!')
 
 #ダブルイリミネーションwinners
-
+'''
         if message.channel.name == 'winners_2_1':
             try:
                 j = l.index('winners_3_1')
@@ -2521,12 +2522,12 @@ async def on_message(message):
 #Grandfinal
         if message.channel.name == 'Grand_final':
             await client.send_message(message.channel, 'Congratulations!!! Grand final 優勝おめでとうございます!! ほんまにおめでとう！')
-
+'''
 #ここまで１回戦の誘導
 
     global miTenko
 
-    if message.content.startswith('点呼開始'):
+    if message.content.startswith('!点呼開始'):
         if message.channel.name == '点呼':
             miTenko = ([member.display_name for member in client.get_all_members()])
             name = client.user.name
