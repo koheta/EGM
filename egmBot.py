@@ -420,7 +420,7 @@ async def on_message(message):
     global cmd
     global l
     if message.channel.name == '設定':
-        if message.content.startswith('rim'):
+        if message.content.startswith('!rim'):
             ch = [channel.id for channel in message.server.channels]
             for i in ch:
                 channel = client.get_channel(i)
