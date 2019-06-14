@@ -1254,7 +1254,7 @@ async def on_message(message):
             await client.send_message(message.channel, 'おめでとうございます。勝利チームは #3_21 のチャットで待機してください')
         if message.channel.name == '2_42':
             await client.send_message(message.channel, 'おめでとうございます。勝利チームは #3_21 のチャットで待機してください')
-        if message.channel.name == '2_42':
+        if message.channel.name == '2_43':
             await client.send_message(message.channel, 'おめでとうございます。勝利チームは #3_22 のチャットで待機してください')
         if message.channel.name == '2_44':
             await client.send_message(message.channel, 'おめでとうございます。勝利チームは #3_22 のチャットで待機してください')
